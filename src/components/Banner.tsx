@@ -9,7 +9,7 @@ const Banner = () => {
                 {/* Left Side */}
                 <div className="w-full md:w-1/2">
 
-                    <h4 className="text-4xl md:text-5xl font-bold leading-tight mb-5">
+                    <h4 className=" text-4xl md:text-5xl font-bold leading-tight mb-5">
                         Build Your Ideal
                         <br />
                         <span className="bg-gradient-to-r from-[#FF5722] via-[#FF7043] to-[#FFAB91] bg-clip-text text-transparent">

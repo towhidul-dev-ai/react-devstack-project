@@ -1,17 +1,27 @@
+// export interface Itechnology {
+//   id: number;
+//   name: string;
+//   category:
+//     | "Frontend"
+//     | "Backend"
+//     | "Database"
+//     | "Language"
+//     | "Styling"
+//     | "DevOps"
+//     | "Tools";
+//   description: string;
+//   icon: string;
+//   rating: number;
+//   difficulty: "Beginner-Friendly" | "Intermediate" | "Advanced";
+//   badge: string;
+// }
 export interface Itechnology {
-  id: number;
+  id: string;
   name: string;
-  category:
-    | "Frontend"
-    | "Backend"
-    | "Database"
-    | "Language"
-    | "Styling"
-    | "DevOps"
-    | "Tools";
+  category: string;
   description: string;
   icon: string;
   rating: number;
-  difficulty: "Beginner-Friendly" | "Intermediate" | "Advanced";
+  difficulty: string;
   badge: string;
 }

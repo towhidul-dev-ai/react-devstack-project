@@ -1,152 +1,122 @@
 [
   {
-    "id": 1,
+    "id": "react",
     "name": "React",
     "category": "Frontend",
-    "description": "A JavaScript library for building fast and interactive user interfaces.",
-    "icon": "https://cdn.simpleicons.org/react",
-    "rating": 4.8,
-    "difficulty": "Intermediate",
+    "description": "A declarative, component-based JavaScript library for building modern user interfaces.",
+    "icon": "https://icon.icepanel.io/Technology/svg/React.svg",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
     "badge": "Popular"
   },
   {
-    "id": 2,
-    "name": "Next.js",
-    "category": "Frontend",
-    "description": "A React framework for building modern full-stack and production-ready web applications.",
-    "icon": "https://cdn.simpleicons.org/nextdotjs",
-    "rating": 4.9,
-    "difficulty": "Intermediate",
-    "badge": "Fast"
-  },
-  {
-    "id": 3,
+    "id": "vue",
     "name": "Vue.js",
     "category": "Frontend",
-    "description": "A progressive JavaScript framework for creating user interfaces and single-page applications.",
-    "icon": "https://cdn.simpleicons.org/vuedotjs",
-    "rating": 4.7,
-    "difficulty": "Beginner-Friendly",
-    "badge": "Popular"
-  },
-  {
-    "id": 4,
-    "name": "Node.js",
-    "category": "Backend",
-    "description": "A JavaScript runtime used to build scalable server-side and backend applications.",
-    "icon": "https://cdn.simpleicons.org/nodedotjs",
-    "rating": 4.8,
-    "difficulty": "Intermediate",
-    "badge": "Essential"
-  },
-  {
-    "id": 5,
-    "name": "Express.js",
-    "category": "Backend",
-    "description": "A lightweight Node.js framework for building APIs and web servers.",
-    "icon": "https://cdn.simpleicons.org/express",
-    "rating": 4.6,
-    "difficulty": "Beginner-Friendly",
-    "badge": "Essential"
-  },
-  {
-    "id": 6,
-    "name": "Python",
-    "category": "Language",
-    "description": "A versatile programming language widely used for web development, automation, AI, and data science.",
-    "icon": "https://cdn.simpleicons.org/python",
-    "rating": 4.9,
-    "difficulty": "Beginner-Friendly",
-    "badge": "Popular"
-  },
-  {
-    "id": 7,
-    "name": "TypeScript",
-    "category": "Language",
-    "description": "A strongly typed programming language that builds on JavaScript for more reliable applications.",
-    "icon": "https://cdn.simpleicons.org/typescript",
-    "rating": 4.9,
-    "difficulty": "Intermediate",
-    "badge": "Essential"
-  },
-  {
-    "id": 8,
-    "name": "PostgreSQL",
-    "category": "Database",
-    "description": "A powerful open-source relational database designed for reliability and complex workloads.",
-    "icon": "https://cdn.simpleicons.org/postgresql",
-    "rating": 4.8,
-    "difficulty": "Intermediate",
-    "badge": "Reliable"
-  },
-  {
-    "id": 9,
-    "name": "MongoDB",
-    "category": "Database",
-    "description": "A flexible NoSQL database that stores data in document-oriented structures.",
-    "icon": "https://cdn.simpleicons.org/mongodb",
-    "rating": 4.7,
-    "difficulty": "Beginner-Friendly",
-    "badge": "Popular"
-  },
-  {
-    "id": 10,
-    "name": "Tailwind CSS",
-    "category": "Styling",
-    "description": "A utility-first CSS framework for quickly building modern and responsive interfaces.",
-    "icon": "https://cdn.simpleicons.org/tailwindcss",
+    "description": "An approachable framework for building interactive web interfaces.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Vue.js.svg",
     "rating": 4.8,
     "difficulty": "Beginner-Friendly",
+    "badge": "Versatile"
+  },
+  {
+    "id": "svelte",
+    "name": "Svelte",
+    "category": "Frontend",
+    "description": "A modern frontend framework that compiles components into efficient JavaScript.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Svelte.svg",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
     "badge": "Fast"
   },
   {
-    "id": 11,
-    "name": "Docker",
-    "category": "DevOps",
-    "description": "A platform for packaging applications and their dependencies into portable containers.",
-    "icon": "https://cdn.simpleicons.org/docker",
-    "rating": 4.8,
+    "id": "nextjs",
+    "name": "Next.js",
+    "category": "Frontend",
+    "description": "A React framework for building full-stack web applications.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Next.js.svg",
+    "rating": 4.9,
     "difficulty": "Intermediate",
-    "badge": "Containers"
-  },
-  {
-    "id": 12,
-    "name": "Git",
-    "category": "Tools",
-    "description": "A distributed version control system for tracking code changes and collaborating with developers.",
-    "icon": "https://cdn.simpleicons.org/git",
-    "rating": 4.9,
-    "difficulty": "Beginner-Friendly",
-    "badge": "Essential"
-  },
-  {
-    "id": 13,
-    "name": "GitHub",
-    "category": "Tools",
-    "description": "A development platform for hosting repositories, collaborating on code, and managing projects.",
-    "icon": "https://cdn.simpleicons.org/github",
-    "rating": 4.9,
-    "difficulty": "Beginner-Friendly",
-    "badge": "Popular"
-  },
-  {
-    "id": 14,
-    "name": "AWS",
-    "category": "DevOps",
-    "description": "A cloud computing platform providing infrastructure, storage, databases, and deployment services.",
-    "icon": "https://cdn.simpleicons.org/amazonaws",
-    "rating": 4.8,
-    "difficulty": "Advanced",
     "badge": "Powerful"
   },
   {
-    "id": 15,
-    "name": "Vite",
-    "category": "Tools",
-    "description": "A modern frontend build tool that provides extremely fast development and production builds.",
-    "icon": "https://cdn.simpleicons.org/vite",
+    "id": "nodejs",
+    "name": "Node.js",
+    "category": "Backend",
+    "description": "A JavaScript runtime built for scalable server-side applications.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Node.js.svg",
     "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Standard"
+  },
+  {
+    "id": "postgresql",
+    "name": "PostgreSQL",
+    "category": "Database",
+    "description": "A powerful open-source relational database system.",
+    "icon": "https://icon.icepanel.io/Technology/svg/PostgresSQL.svg",
+    "rating": 4.9,
+    "difficulty": "Intermediate",
+    "badge": "Top SQL"
+  },
+  {
+    "id": "redis",
+    "name": "Redis",
+    "category": "Database",
+    "description": "An in-memory data store used for caching and high-speed applications.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Redis.svg",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Cache"
+  },
+  {
+    "id": "javascript",
+    "name": "JavaScript",
+    "category": "Language",
+    "description": "A versatile programming language used for modern web development.",
+    "icon": "https://icon.icepanel.io/Technology/svg/JavaScript.svg",
+    "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "badge": "Fast"
+    "badge": "Ubiquitous"
+  },
+  {
+    "id": "typescript",
+    "name": "TypeScript",
+    "category": "Language",
+    "description": "A strongly typed programming language built on JavaScript.",
+    "icon": "https://icon.icepanel.io/Technology/svg/TypeScript.svg",
+    "rating": 4.9,
+    "difficulty": "Intermediate",
+    "badge": "Essential"
+  },
+  {
+    "id": "java",
+    "name": "Java",
+    "category": "Language",
+    "description": "A secure and object-oriented programming language used at scale.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Java.svg",
+    "rating": 4.6,
+    "difficulty": "Intermediate",
+    "badge": "Robust"
+  },
+  {
+    "id": "tailwind",
+    "name": "Tailwind CSS",
+    "category": "Styling",
+    "description": "A utility-first CSS framework for building custom interfaces quickly.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Modern"
+  },
+  {
+    "id": "docker",
+    "name": "Docker",
+    "category": "DevOps",
+    "description": "A platform for building, shipping and running applications in containers.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Docker.svg",
+    "rating": 4.9,
+    "difficulty": "Intermediate",
+    "badge": "Containers"
   }
 ]
