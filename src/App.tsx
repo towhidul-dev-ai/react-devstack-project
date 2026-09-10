@@ -1,35 +1,3 @@
-// import { Suspense } from "react"
-// import Banner from "./components/Banner"
-// import Footer from "./components/Footer"
-// import Nav from "./components/Nav"
-// import Techonology from "./components/technologies/Techonology"
-// import type { Itechnology } from "./types/type"
-
-// const techFetch = async (): Promise<Itechnology[]> => {
-//   const res = await fetch('/data.json')
-//   const data = await res.json();
-//   return data;
-// }
-
-// function App() {
-//   const techPromise = techFetch();
-
-//   return (
-//     <>
-//       <Nav />
-//       <Banner />
-
-//       <Suspense fallback={<h2>Loading.......</h2>}>
-//         <Techonology techPromise={techPromise} />
-//       </Suspense>
-//       <Footer />
-
-
-//     </>
-//   )
-// }
-
-// export default App
 
 import { useEffect, useState } from "react";
 
@@ -39,6 +7,7 @@ import Nav from "./components/Nav";
 import Techonology from "./components/technologies/Techonology";
 
 import type { Itechnology } from "./types/type";
+import { Bounce, toast } from "react-toastify";
 
 function App() {
   const [technologies, setTechnologies] = useState<Itechnology[]>([]);
@@ -65,23 +34,42 @@ function App() {
     );
 
     if (alreadyAdded) {
-      alert("This technology is already in your stack!");
+      toast.error(`${tech.name} is already in your stack!`);
       return;
     }
 
     setSelectedTech((prev) => [...prev, tech]);
+    // toast.success(`${tech.name} added successfully!`)
+    toast.success(`${tech.name} added successfully!`, {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Bounce,
+    });
   };
 
   // Remove one technology
   const handleRemove = (id: string) => {
+    const techRemove = selectedTech.find((tech) => tech.id === id);
+
     setSelectedTech((prev) =>
       prev.filter((tech) => tech.id !== id)
     );
+
+    if (techRemove) {
+      toast.error(`${techRemove.name} removed from your stack!`);
+    }
   };
 
   // Remove all technologies
   const handleRemoveAll = () => {
     setSelectedTech([]);
+    toast.error("All technologies removed!");
   };
 
   return (

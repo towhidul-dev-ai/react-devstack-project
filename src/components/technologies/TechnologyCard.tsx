@@ -1,8 +1,7 @@
 import type { Itechnology } from "../../types/type";
 
 interface TechnologyCardProps {
-    tech: Itechnology;
-    isSelected: boolean;
+    tech: Itechnology; isSelected: boolean;
     onAdd: (tech: Itechnology) => void;
 }
 
@@ -63,16 +62,14 @@ const TechnologyCard = ({
                 <img
                     src={tech.icon}
                     alt={tech.name}
-                    className="w-10 h-10 object-contain"
-                />
+                    className="w-10 h-10 object-contain" />
 
                 {/* Hide badge for Next.js */}
                 {tech.id !== "nextjs" && (
                     <span
                         className={`text-xs px-2 py-1 rounded-full font-medium ${getBadgeColor(
                             tech.id
-                        )}`}
-                    >
+                        )}`}>
                         {tech.badge}
                     </span>
                 )}
