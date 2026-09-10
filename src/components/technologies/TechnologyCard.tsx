@@ -6,6 +6,50 @@ interface TechnologyCardProps {
     onAdd: (tech: Itechnology) => void;
 }
 
+// Badge colors for each technology
+const getBadgeColor = (id: string) => {
+    switch (id) {
+        case "react":
+            return "bg-[#E0F2FE] text-[#0EA5E9]";
+
+        case "vue":
+            return "bg-[#D1FAE5] text-[#059669]";
+
+        case "svelte":
+            return "bg-[#FFEDD5] text-[#EA580C]";
+
+        case "nextjs":
+            return "";
+
+        case "nodejs":
+            return "bg-[#D1FAE5] text-[#059669]";
+
+        case "postgresql":
+            return "bg-[#DBEAFE] text-[#2563EB] ";
+
+        case "redis":
+            return "bg-[#FEE2E2] text-[#DC2626]";
+
+        case "javascript":
+            return "bg-[#FEF3C7] text-[#D97706]";
+
+        case "typescript":
+            return "bg-[#E0F2FE] text-[#0284C7]";
+
+        case "java":
+            return "bg-[#E0F2FE] text-[#0284C7]";
+
+        case "tailwind":
+            return "bg-[#CFFAFE] text-[#0891B2]";
+
+        case "docker":
+            return "bg-[#E0F2FE] text-[#0284C7]";
+
+        default:
+            return "bg-gray-100 text-gray-700";
+    }
+};
+
 const TechnologyCard = ({
     tech,
     isSelected,
@@ -14,22 +58,27 @@ const TechnologyCard = ({
     return (
         <div className="border border-gray-200 rounded-xl p-4 bg-white shadow-sm hover:shadow-md transition">
 
-            {/* Icon + Badge */}
+            {/* Icon & Badge */}
             <div className="flex justify-between items-start">
-
                 <img
                     src={tech.icon}
                     alt={tech.name}
                     className="w-10 h-10 object-contain"
                 />
 
-                <span className="text-xs px-2 py-1 rounded-full bg-gray-100">
-                    {tech.badge}
-                </span>
-
+                {/* Hide badge for Next.js */}
+                {tech.id !== "nextjs" && (
+                    <span
+                        className={`text-xs px-2 py-1 rounded-full font-medium ${getBadgeColor(
+                            tech.id
+                        )}`}
+                    >
+                        {tech.badge}
+                    </span>
+                )}
             </div>
 
-            {/* Name */}
+            {/* Technology Name */}
             <h2 className="text-lg font-semibold mt-4">
                 {tech.name}
             </h2>
@@ -39,9 +88,8 @@ const TechnologyCard = ({
                 {tech.description}
             </p>
 
-            {/* Information */}
+            {/* Technology Information */}
             <div className="flex items-center justify-between mt-4 text-xs">
-
                 <span className="bg-gray-100 px-2 py-1 rounded">
                     {tech.category}
                 </span>
@@ -53,7 +101,6 @@ const TechnologyCard = ({
                 <span>
                     ⭐ {tech.rating}
                 </span>
-
             </div>
 
             {/* Add Button */}
@@ -65,11 +112,8 @@ const TechnologyCard = ({
                     : "bg-gray-950 text-white hover:bg-gray-800"
                     }`}
             >
-                {isSelected
-                    ? "✓ Added to Stack"
-                    : "Add to Stack"}
+                {isSelected ? "✓ Added to Stack" : "Add to Stack"}
             </button>
-
         </div>
     );
 };
