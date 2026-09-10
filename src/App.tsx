@@ -10,8 +10,8 @@ function App() {
   return (
     <>
       <Nav />
-      {/* <Banner />
-      <Footer /> */}
+      <Banner />
+      <Footer />
 
 
     </>
