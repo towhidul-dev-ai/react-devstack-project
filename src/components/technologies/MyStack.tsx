@@ -22,7 +22,10 @@ const MyStack = ({
                         Your Stack
                     </h2>
                     <p className="text-xs text-gray-500 mt-1">
-                        No Technologies Selected yet.
+                        {selectedTech.length === 0
+                            ? "No Technologies Selected yet."
+                            : `${selectedTech.length} ${selectedTech.length === 1 ? "Technology" : "Technologies"
+                            } Selected`}
                     </p>
                 </div>
 
