@@ -1,29 +1,3 @@
-// import React, { use } from 'react';
-// import type { Itechnology } from '../../types/type';
-// import StackTechnology from './StackTechnology';
-
-// interface TechnologyProps {
-//     techPromise: Promise<Itechnology[]>
-// }
-
-// const Techonology = ({ techPromise }): TechnologyProps => {
-//     console.log(techPromise)
-//     const tech = use(techPromise);
-//     console.log(tech);
-//     return (<div>
-//         <div className='max-w-7xl mx-auto px-4 py-4'>
-//             <h2 className='font-bold text-xl'>Explore the Technologies</h2>
-//             <p>Pick one technology per category to build your ideal stack.</p>
-//         </div>
-//         <StackTechnology tech={tech} />
-
-//     </div>
-//     );
-
-// };
-
-// export default Techonology;
-
 import type { Itechnology } from "../../types/type";
 import TechnologyCard from "./TechnologyCard";
 import MyStack from "./MyStack";

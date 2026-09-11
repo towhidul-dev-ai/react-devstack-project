@@ -34,13 +34,13 @@ function App() {
     );
 
     if (alreadyAdded) {
-      toast.error(`${tech.name} is already in your stack!`);
+      toast.warn(`${tech.name} is already in your stack!`);
       return;
     }
 
     setSelectedTech((prev) => [...prev, tech]);
     // toast.success(`${tech.name} added successfully!`)
-    toast.success(`${tech.name} added successfully!`, {
+    toast.success(`${tech.name} added to your stack!`, {
       position: "top-center",
       autoClose: 5000,
       hideProgressBar: false,
@@ -62,7 +62,7 @@ function App() {
     );
 
     if (techRemove) {
-      toast.error(`${techRemove.name} removed from your stack!`);
+      toast.warn(`${techRemove.name} removed from your stack!`);
     }
   };
 
