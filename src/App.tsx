@@ -69,7 +69,7 @@ function App() {
   // Remove all technologies
   const handleRemoveAll = () => {
     setSelectedTech([]);
-    toast.error("All technologies removed!");
+    toast.error("All technology removed!");
   };
 
   return (
