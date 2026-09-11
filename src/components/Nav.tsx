@@ -49,8 +49,7 @@ const Nav = () => {
                     <div className="flex gap-4 items-center">
                         <a
                             href="#signin"
-                            className="text-sm font-medium hover:text-pink-500"
-                        >
+                            className="text-sm font-medium hover:text-pink-500">
                             Sign In
                         </a>
 
